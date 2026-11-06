@@ -12,6 +12,6 @@ print("Updating..")
 subprocess.run(["git", "pull"], cwd=path, check=True)
 
 print("Updating modules...")
-subprocess.run([str(venv_python), "-m", "pip", "install", "--upgrade", "-r", "requirements.txt"], cwd=path, check=True)
+subprocess.run(["~/.local/share/mcpe_rp/.venv/bin/python", "-m", "pip", "install", "--upgrade", "-r", "requirements.txt"], cwd=path, check=True)
 
 print("Done. run mcpe_rp")
