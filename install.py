@@ -11,4 +11,4 @@ sh_path = path / "install.sh"
 
 subprocess.run(["sh", str(sh_path)], cwd=path, check=True)
 
-print("Installed.")
+print("Installed.\nRun mcpe_rp")
