@@ -6,9 +6,9 @@ from pathlib import Path
 path = Path.home() / ".local" / "share" / "mcpe_rp"
 print("Installing....")
 if not path.exists():
-    subprocess.Popen(["git", "clone", "https://github.com/isam-ahmed0/mcpe_rp.git", str(path)], check=True)
+    subprocess.run(["git", "clone", "https://github.com/isam-ahmed0/mcpe_rp.git", str(path)], check=True)
 sh_path = path / "install.sh"
 
-subprocess.Popen(["sh", str(sh_path)], cwd=path, check=True)
+subprocess.run(["sh", str(sh_path)], cwd=path, check=True)
 
 print("Installed.")
